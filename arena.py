@@ -50,46 +50,67 @@ class Arena:
     def gesture_decider(self):
         if self.player_one.gesture == 'rock' and self.player_two.gesture == 'scissors':
             self.player_one.score += 1
+            print(f'{self.player_one.gesture} beats {self.player_two.gesture}')
         elif self.player_two.gesture == 'rock' and self.player_one.gesture == 'scissors':
             self.player_two.score += 1
+            print(f'{self.player_two.gesture} beats {self.player_one.gesture}')
         elif self.player_one.gesture == 'scissors' and self.player_two.gesture == 'paper':
             self.player_one.score += 1
+            print(f'{self.player_one.gesture} beats {self.player_two.gesture}')
         elif self.player_two.gesture == 'scissors' and self.player_one.gesture == 'paper':
             self.player_two.score += 1
+            print(f'{self.player_two.gesture} beats {self.player_one.gesture}')
         elif self.player_one.gesture == 'paper' and self.player_two.gesture == "rock":
             self.player_one.score += 1
+            print(f'{self.player_one.gesture} beats {self.player_two.gesture}')
         elif self.player_two.gesture == 'paper' and self.player_one.gesture == "rock":
             self.player_two.score += 1
+            print(f'{self.player_two.gesture} beats {self.player_one.gesture}')
         elif self.player_one.gesture == 'rock' and self.player_two.gesture == "lizard":
             self.player_one.score += 1
+            print(f'{self.player_one.gesture} beats {self.player_two.gesture}')
         elif self.player_two.gesture == 'rock' and self.player_one.gesture == "lizard":
             self.player_two.score += 1
+            print(f'{self.player_two.gesture} beats {self.player_one.gesture}')
         elif self.player_one.gesture == 'lizard' and self.player_two.gesture == "spock":
             self.player_one.score += 1
+            print(f'{self.player_one.gesture} beats {self.player_two.gesture}')
         elif self.player_two.gesture == 'lizard' and self.player_one.gesture == "spock":
             self.player_two.score += 1
+            print(f'{self.player_two.gesture} beats {self.player_one.gesture}')
         elif self.player_one.gesture == 'spock' and self.player_two.gesture == "scissors":
             self.player_one.score += 1
+            print(f'{self.player_one.gesture} beats {self.player_two.gesture}')
         elif self.player_two.gesture == 'spock' and self.player_one.gesture == "scissors":
             self.player_two.score += 1
+            print(f'{self.player_two.gesture} beats {self.player_one.gesture}')
         elif self.player_one.gesture == 'scissors' and self.player_two.gesture == "lizard":
             self.player_one.score += 1
+            print(f'{self.player_one.gesture} beats {self.player_two.gesture}')
         elif self.player_two.gesture == 'scissors' and self.player_two.gesture == "lizard":
             self.player_two.score += 1
+            print(f'{self.player_two.gesture} beats {self.player_one.gesture}')
         elif self.player_one.gesture == 'lizard' and self.player_two.gesture == "paper":
             self.player_one.score += 1
+            print(f'{self.player_one.gesture} beats {self.player_two.gesture}')
         elif self.player_two.gesture == 'lizard' and self.player_one.gesture == "paper":
             self.player_two.score += 1
+            print(f'{self.player_two.gesture} beats {self.player_one.gesture}')
         elif self.player_one.gesture == 'paper' and self.player_two.gesture == "spock":
             self.player_one.score += 1
+            print(f'{self.player_one.gesture} beats {self.player_two.gesture}')
         elif self.player_two.gesture == 'paper' and self.player_one.gesture == "spock":
             self.player_two.score += 1
+            print(f'{self.player_two.gesture} beats {self.player_one.gesture}')
         elif self.player_one.gesture == 'spock' and self.player_two.gesture == "rock":
             self.player_one.score += 1
+            print(f'{self.player_one.gesture} beats {self.player_two.gesture}')
         elif self.player_two.gesture == 'spock' and self.player_one.gesture == "rock":
             self.player_two.score += 1
+            print(f'{self.player_two.gesture} beats {self.player_one.gesture}')
         else:
             print(f'{self.player_one.gesture} ties with {self.player_two.gesture}')
+            print(f'Both players used {self.player_one.gesture} and tied!')
 #greeting
 #how many players?
 #if 1 player_two = human
