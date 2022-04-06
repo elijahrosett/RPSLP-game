@@ -1,7 +1,10 @@
+from unicodedata import name
+
+
 class Player:
     def __init__(self, name):
         self.name = name
-        self.gesture_list = ["rock", "paper", "scissors", "lizard", "Spock"]
+        self.gesture_list = ["rock", "paper", "scissors", "lizard", "spock"]
         self.score = 0
 
     def gesture_pick(self):
