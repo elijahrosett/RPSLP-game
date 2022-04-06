@@ -1,7 +1,7 @@
 from human import Human
 from ai import Ai
 
-player_two_ai = Ai("jarvis")
+
 
 
 
@@ -10,7 +10,7 @@ class Arena:
     def __init__(self):
         self.player_one = ""
         self.player_two = ""
-        self.player_two_ai = player_two_ai
+        
 
     def run_game(self):
         self.greeting()
@@ -25,13 +25,16 @@ class Arena:
     def how_many_players(self):
         user_input = int(input("How many people will be playing?"))
         if user_input == 1:
-            self.player_two = player_two_ai
+            self.player_two = Ai("Jarvis")
+            self.player_one = Human(input("Please enter player one's name"))
+            print(f"Welcome {self.player_one.name}! You will be playing againt {self.player_two_ai.name}.")    
         elif user_input == 2:
             self.player_one = Human(input("Please enter player one's name"))
             self.player_two = Human(input("Please enter player two's name"))  
             print(f"Welcome {self.player_one.name} and {self.player_two.name}!")
     
     def play_round(self):
+        
         pass
 
         pass
