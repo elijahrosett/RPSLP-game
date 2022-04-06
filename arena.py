@@ -6,7 +6,7 @@ class arena:
     def run_game(self):
         pass
 
-    
+
     def greeting(self):
         print("Welcome to rock, paper, scissors, Spock, lizard!")
 
@@ -19,6 +19,10 @@ class arena:
 
     def play_round(self):
 
+        pass
+
+    def gesture_decider(self):
+        
         pass
 
 
