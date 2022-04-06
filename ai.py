@@ -3,7 +3,7 @@ from player import Player
 class Ai(Player):
     def __init__(self,name):
         self.name = "Jarivs"
-        self.select_gesture = ""
+        self.gesture = None
         super().__init__(name)
 
     def gesture_pick(self):
