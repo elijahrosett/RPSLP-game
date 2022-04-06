@@ -1,6 +1,6 @@
 import random
 from player import Player
-class AI(Player):
+class Ai(Player):
     def __init__(self,name):
         self.name = "Jarivs"
         self.select_gesture = ""
@@ -11,5 +11,3 @@ class AI(Player):
         print(f"{self.name} has picked {self.gesture}!")
         
 
-ai = AI("Jarvis")
-ai.gesture_pick()
