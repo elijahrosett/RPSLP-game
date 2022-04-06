@@ -15,7 +15,7 @@ class Arena:
     def run_game(self):
         self.greeting()
         self.how_many_players()
-        while self.player_one.score <= 2 and self.player_two.score <= 2:
+        while self.player_one.score < 2 and self.player_two.score < 2:
             self.play_round()
         self.display_winner()
 
@@ -26,15 +26,18 @@ class Arena:
         
 
     def how_many_players(self):
-        user_input = int(input("How many people will be playing?"))
-        if user_input == 1:
+        user_input = input("How many people will be playing?")
+        if user_input == '1':
             self.player_two = Ai("Jarvis")
             self.player_one = Human(input("Please enter player one's name"))
             print(f"Welcome {self.player_one.name}! You will be playing againt {self.player_two.name}.")    
-        elif user_input == 2:
+        elif user_input == '2':
             self.player_one = Human(input("Please enter player one's name"))
             self.player_two = Human(input("Please enter player two's name"))  
             print(f"Welcome {self.player_one.name} and {self.player_two.name}!")
+        else:
+            print('Invalid Input please type 1 or 2')
+            self.how_many_players()
     
     def play_round(self):
         self.player_one.gesture_pick()
