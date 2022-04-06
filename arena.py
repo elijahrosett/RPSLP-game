@@ -15,7 +15,10 @@ class Arena:
     def run_game(self):
         self.greeting()
         self.how_many_players
-        pass
+        while self.player_one.score <= 2 and self.player_two.score <= 2:
+            self.play_round()
+        self.display_winner()
+
 
 
     def greeting(self):
@@ -34,10 +37,15 @@ class Arena:
             print(f"Welcome {self.player_one.name} and {self.player_two.name}!")
     
     def play_round(self):
-        
-        pass
-
-        pass
+        self.player_one.gesture_pick()
+        self.player_two.gesture_pick()
+        self.gesture_decider()
+    
+    def display_winner(self):
+        if self.player_one.score >= 2:
+            print(f'{self.player_one.name} Wins!')
+        elif self.player_two.score >= 2:
+            print(f'{self.player_two.name} Wins!')
 
     def gesture_decider(self):
         if self.player_one.gesture == 'rock' and self.player_two.gesture == 'scissors':
