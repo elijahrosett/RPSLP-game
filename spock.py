@@ -1,6 +1,6 @@
 from gesture import Gesture
-class Rock(Gesture):
+class Spock(Gesture):
     def __init__(self):
         super().__init__()
-        self.name = 'rock'
+        self.name = 'spock'
         self.can_beat = ['scissors', 'lizard']
