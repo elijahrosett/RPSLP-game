@@ -1,9 +1,4 @@
 from gesture import Gesture
-from rock import Rock
-from paper import Paper
-from scissors import Scissors
-from lizard import Lizard
-from spock import Spock
 rock = Gesture('Rock', ['Scissors', 'Lizard'], ['Spock', 'Paper'])
 paper = Gesture('Paper', ['Rock', 'Spock'], ['Scissors', 'Lizard'])
 scissors = Gesture('Scissors', ['Paper', 'Lizard'], ['Rock', 'Spock'])
