@@ -40,9 +40,9 @@ class Arena:
         round_winner = self.player_one.gesture.gesture_check(self.player_two.gesture.name)
         if round_winner == 1:
             self.player_one.score += 1
-            print (f"{self.player_one.gesture} beats {self.player_two.gesture} ")
+            print (f"{self.player_one.gesture.name} beats {self.player_two.gesture.name} ")
         elif round_winner == 2:
             self.player_two.score += 1
-            print (f"{self.player_two.gesture} beats {self.player_one.gesture} ")
+            print (f"{self.player_two.gesture.name} beats {self.player_one.gesture.name} ")
         else:
             print ('Its a Tie!')
