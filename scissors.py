@@ -4,3 +4,4 @@ class Scissors(Gesture):
         super().__init__()
         self.name = 'scissors'
         self.can_beat = ['paper', 'lizard']
+        self.is_beat_by = ['rock', 'spock']

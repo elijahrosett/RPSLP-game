@@ -37,4 +37,12 @@ class Arena:
         elif self.player_two.score >= 2:
             print(f'{self.player_two.name} Wins!')
     def gesture_decider(self):
-        pass
+        round_winner = self.player_one.gesture.gesture_check(self.player_two.gesture.name)
+        if round_winner == 1:
+            self.player_one.score += 1
+            print (f"{self.player_one.gesture} beats {self.player_two.gesture} ")
+        elif round_winner == 2:
+            self.player_two.score += 1
+            print (f"{self.player_two.gesture} beats {self.player_one.gesture} ")
+        else:
+            print ('Its a Tie!')

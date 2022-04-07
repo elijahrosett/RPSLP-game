@@ -4,3 +4,4 @@ class Lizard(Gesture):
         super().__init__()
         self.name = 'lizard'
         self.can_beat = ['spock', 'paper']
+        self.is_beat_by = ['scissors', 'rock']
